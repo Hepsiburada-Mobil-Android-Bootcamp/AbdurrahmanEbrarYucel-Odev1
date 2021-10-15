@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="todoActivityReference"
+            type="com.android.android_ui_livedata.view.ToDoActivity" />
+
+        <variable
+            name="todo"
+            type="com.android.android_ui_livedata.model.Todo" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/todobg"
+    android:layout_height="match_parent"
+    tools:context=".view.ToDoActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:fontFamily="@font/merriweather_bold"
+        android:text="@string/to_do_list"
+        android:textAlignment="center"
+        android:textColor="#F0826B"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:background="#F3F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext7"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textColorHint="#37474F"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="#37474F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F3F3"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/job_title"
+            android:inputType="text"
+            android:textColor="#37474F"
+            android:textColorHint="#37474F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext9"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textColorHint="#37474F"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="#37474F"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext7">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F3F3"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/job_details"
+            android:inputType="text"
+            android:textColor="#37474F"
+            android:textColorHint="#37474F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTodo"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_220sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:backgroundTint="#F0826B"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:onClick="@{()->todoActivityReference.addOnClick()}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

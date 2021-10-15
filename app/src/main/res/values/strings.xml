@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AndroidDesign-UI-Livedata</string>
+    <string name="Create"><u>Create</u></string>
+    <string name="don_t_have_an_account">Don\'t have an account?<u><font color="#00000"> Create</font></u></string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="what_would_you_like_to_see_today">What would you like to see today? <u><font color="#3544C4">Popular</font></u> <font color="#3544C4" size="14"> ᐯ</font></string>
+    <string name="popular_actor_s">Popular Actor\'s</string>
+    <string name="see_all"><font color="#3544C4">See all</font></string>
+    <string name="home">Home</string>
+    <string name="favourites">Favourites</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="title">Title</string>
+    <string name="details">Details</string>
+    <string name="add">Add</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="todo_screen_livedata">ToDo Screen LiveData</string>
+    <string name="job">Job</string>
+    <string name="job_title">Job Title</string>
+    <string name="job_details">Job Details</string>
+    <string name="to_do_list">To Do List - LiveData</string>
+</resources>
